@@ -1,24 +1,72 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import { FaProjectDiagram, FaCertificate, FaEnvelope, FaHome, FaCog, FaPen } from 'react-icons/fa';  // Importation de FaPen pour le blog
 import './App.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
+
+// Importer les pages
+import Home from './component/Home';
+import Contact from './component/Contact';
+import Certifications from './component/Certifications';
+import Competances from './component/Competances';
+import Projects from './component/Projects';
+import Blog from './component/Blog';  // Assurez-vous d'avoir cette page
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="portfolio-title">
+          <Link to="/home">Portfolio</Link>
+        </div>
+      <div className="App">
+        <div className="icons-container">
+          <div className="icon-item">
+            <Link to="/home">
+              <FaHome size={30} />
+            </Link>
+          </div>
+          <div className="icon-item">
+            <Link to="/projects">
+              <FaProjectDiagram size={30} />
+            </Link>
+          </div>
+          <div className="icon-item">
+            <Link to="/certifications">
+              <FaCertificate size={30} />
+            </Link>
+          </div>
+          <div className="icon-item">
+            <Link to="/competances">
+              <FaCog size={30} />
+            </Link>
+          </div>
+          <div className="icon-item">
+            <Link to="/contact">
+              <FaEnvelope size={30} />
+            </Link>
+          </div>
+          {/* Ajout de l'icône du blog */}
+          <div className="icon-item">
+            <Link to="/blog">
+              <FaPen size={30} />
+            </Link>
+          </div>
+        </div>
+
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/certifications" element={<Certifications />} />
+          <Route path="/competances" element={<Competances />} />
+          <Route path="/contact" element={<Contact />} />
+          {/* Ajout de la route pour le blog */}
+          <Route path="/blog" element={<Blog />} />
+        </Routes>
+
+        <p className="copyright">© 2025 Omar Elloumi. Tous droits réservés.</p>
+      </div>
+    </Router>
   );
 }
 
