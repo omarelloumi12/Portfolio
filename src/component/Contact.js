@@ -14,12 +14,12 @@ function Contact() {
             <div className="contact-details">
                 <div className="contact-item">
                     <h3><FontAwesomeIcon icon={faEnvelope} /> Envoyez-moi un mail</h3>
-                    <p>Email: <a href="mailto:ryhabelmoncerr@gmail.com">omarelloumi64@gmail.com</a></p>
+                    <p>Email: <a href="mailto:omarelloumi64@gmail.com">omarelloumi64@gmail.com</a></p>
                 </div>
 
                 <div className="contact-item">
                     <h3><FontAwesomeIcon icon={faPhone} /> Appelez-moi</h3>
-                    <p>Téléphone: <a href="tel:+21629418145">+216 97337694</a></p>
+                    <p>Téléphone: <a href="tel:+2197337694">+216 97337694</a></p>
                 </div>
             </div>
             <div className="socials-container">
