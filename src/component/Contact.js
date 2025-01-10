@@ -32,7 +32,7 @@ function Contact() {
 <p>"Un CV est une porte d’entrée, mais mon portfolio est une preuve !</p>
 
             <div className="cv-container">
-                 <a href="/OMAR_ELLOUMI_CV.pdf" download="OMAR_ELLOUMI_CV.pdf">
+            <a href={`${process.env.PUBLIC_URL}/OMAR_ELLOUMI_CV.pdf`} download="OMAR_ELLOUMI_CV.pdf">
                 <button className="download-cv-btn">
                     <FontAwesomeIcon icon={faDownload} /> Télécharger mon CV
                 </button>
