@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { FaLaptopCode, FaMobileAlt, FaDatabase, FaTools, FaPencilRuler, FaChartLine } from 'react-icons/fa'; // Importation des icônes
 import './Competances.css'; // Importez le fichier CSS
 
