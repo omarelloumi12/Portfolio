@@ -66,6 +66,37 @@ function Certifications() {
           </p>
         </div>
       </div>
+
+
+      <div className="certification-card">
+
+<img src={`${process.env.PUBLIC_URL}/images/certif wordpress.png`} alt="Certification" className="certification-image" />
+
+  <div className="certification-details">
+    <h2>WordPress</h2>
+    <p>
+      <strong>Date d'obtention :</strong> 19 JAN 2025
+    </p>
+    <p>
+      <strong>Description :</strong>
+    </p>
+    <ul>
+      <li>
+        - Maîtrise de la création et de la gestion de sites web professionnels avec WordPress.
+      </li>
+      <li>
+        - Expertise en personnalisation de thèmes et intégration de plugins pour des besoins spécifiques.
+      </li>
+      <li>
+        - Compétences en optimisation des performances et en création de contenu interactif pour une expérience utilisateur améliorée.
+      </li>
+    </ul>
+    <p>
+      <strong>Mots clés :</strong> Content Creation, Creativity, Web Page
+    </p>
+  </div>
+</div>
+
     </section>
   );
 }
