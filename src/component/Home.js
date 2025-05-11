@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import logo from '../logo.jpg'; // Assurez-vous que le chemin de l'image est correct
 import './Home.css';
+// import innomatekLogo from '../logoentreprise.png';
+
  
 function Home() {
   const [showMore, setShowMore] = useState(false);
@@ -11,10 +13,13 @@ function Home() {
 
   return (
     <div>
+
       <header className="App-header">
+        
         <div className="logo-container">
           <img src={logo} className="App-logo" alt="logo" />
         </div>
+        
         <div className="intro-text">
           <p className="name">Omar Elloumi</p>
           <p className="profession">Software Engineer | Full Stack Web Developer</p>

@@ -151,11 +151,11 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.more-info-btn:hover {
+/* .more-info-btn:hover {
   background: var(--secondary-color);
   transform: scale(1.05);
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
-}
+} */
 
 /* ============================
    INFOS SUPPLÉMENTAIRES

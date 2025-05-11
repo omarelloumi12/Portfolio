@@ -11,13 +11,22 @@ import Certifications from './component/Certifications';
 import Competances from './component/Competances';
 import Projects from './component/Projects';
 import Blog from './component/Blog'; // Assurez-vous d'avoir cette page
+//import innomatekLogo from './logoentreprise.png';
 
 function App() {
   return (
     <Router basename="/Portfolio">
+
+
+
+      
       <div className="portfolio-title">
         <Link to="/home">Portfolio</Link>
       </div>
+
+      
+ 
+
       <div className="App">
         <div className="icons-container">
           <div className="icon-item">
